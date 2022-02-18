@@ -1,6 +1,15 @@
 package com.doughlima.passwordchecker.utils;
 
-public class PasswordConsoleWriter {
+/**@author Douglas Lima.
+ * utility class for storing messages and writing methods that will be displayed
+ * to the user during application execution
+ */
+public final class PasswordConsoleWriter {
+
+    /**
+     * private constructor to prohibit unnecessary class initialization
+     * @throws Exception Exception - throw exception if this class is built
+     */
     private PasswordConsoleWriter() throws Exception {
         throw new Exception("PasswordConsoleWriter cannot be instantiated");
     }
@@ -11,7 +20,6 @@ public class PasswordConsoleWriter {
     public static final String LETTERS_TO_COMPLETE_MESSAGE = "quantidade de letras para completar: ";
     public static final String OK_MESSAGE = "Senha Válida!!";
     public static final String NOT_VALID_MESSAGE = "Senha inválida";
-    public static final String EXIT_OPTION = "Insira 0 para sair ou enter para repetir: ";
 
     public static final String INSTRUCTIONS = String.format("%s%n%s%n%s%n%s%n%s%n%s%n%s",
             "Insira uma senha!",
@@ -22,18 +30,33 @@ public class PasswordConsoleWriter {
             "Possuir no mínimo 1 caractere especial. Os caracteres especiais são: !@#$%^&*()-+",
             ": ");
 
+    /**
+     * Print a RED message for errors or Test Fail
+     * @param message String - message to be printed in RED
+     */
     public static void printRedMessageForError(String message){
         System.out.printf("%s%s%s%n",ANSI_RED,message,ANSI_RESET);
     }
 
+    /**
+     * Print a GREEN message for OK or Test Pass.
+     * @param message String - message to be printed in GREEN
+     */
     public static void printGreenMessageForOK(String message){
         System.out.printf("%s%s%s%n",ANSI_GREEN,message,ANSI_RESET);
     }
 
-    public static void printIsnstructions(){
+    /**
+     * Print instructions of what the password should contain
+     */
+    public static void printInstructions(){
         System.out.print(INSTRUCTIONS);
     }
 
+    /**
+     * Prints the result of remaining digits to complete the password
+     * @param lettersToComplete int - Value of missing digits
+     */
     public static void printLettersToComplete(int lettersToComplete){
         System.out.println(LETTERS_TO_COMPLETE_MESSAGE);
         System.out.println(lettersToComplete);

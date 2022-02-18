@@ -4,6 +4,10 @@ import com.doughlima.passwordchecker.service.validation.rules.*;
 
 import java.util.List;
 
+/**@author Douglas Lima.
+ * this class stores the validation instances that will be performed in a list
+ * and provides a method to execute all of them
+ */
 public class ValidationDriver {
 
     private final LengthRule lengthRule = new LengthRule();
@@ -16,6 +20,10 @@ public class ValidationDriver {
             new UpperCaseRule()
     );
 
+    /** validate the entered password
+     * @param password String - password to be validate
+     * @return Boolean - false for any failure validade or true for all pass.
+     */
     public Boolean validate(String password){
         char[] chars = password.toCharArray();
         return characterRules.stream()
@@ -23,6 +31,10 @@ public class ValidationDriver {
                 .reduce(Boolean.TRUE,Boolean::logicalAnd);
     }
 
+    /** checks how many letters have the password entered and how many are left to complete
+     * @param password String - password to check
+     * @return int - size of missing letters
+     */
     public int getLettersToComplete(String password){
         return lengthRule.LENGTH > password.length()?
                 lengthRule.LENGTH - password.length()
