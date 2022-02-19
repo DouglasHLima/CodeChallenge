@@ -5,11 +5,10 @@ import com.doughlima.stairprint.service.StairPrinter;
 import java.util.Scanner;
 
 /**
- * @author Douglas Lima
  * provides application control logic by reading user input and displaying console values
  * using StairPrinter object
- * @version 1.0
  * @see StairPrinter
+ * @author Douglas Lima
  */
 public class StairPrintController {
 

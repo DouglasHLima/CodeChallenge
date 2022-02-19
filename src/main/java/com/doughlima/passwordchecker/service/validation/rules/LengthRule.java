@@ -3,8 +3,9 @@ package com.doughlima.passwordchecker.service.validation.rules;
 
 import com.doughlima.passwordchecker.service.validation.ValidationRule;
 
-/**@author Douglas Lima.
+/**
  * Rule to check the length of input
+ * @author Douglas Lima.
  */
 public class LengthRule implements ValidationRule<char[]> {
 

@@ -5,8 +5,9 @@ import com.doughlima.passwordchecker.service.validation.ValidationRule;
 
 import java.util.stream.IntStream;
 
-/**@author Douglas Lima.
+/**
  * Rule to check number of digits in input
+ * @author Douglas Lima.
  */
 public class DigitQuantityRule implements ValidationRule<char[]> {
 

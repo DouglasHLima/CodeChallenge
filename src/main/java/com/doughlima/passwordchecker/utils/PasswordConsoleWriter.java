@@ -1,8 +1,9 @@
 package com.doughlima.passwordchecker.utils;
 
-/**@author Douglas Lima.
+/**
  * utility class for storing messages and writing methods that will be displayed
  * to the user during application execution
+ * @author Douglas Lima.
  */
 public final class PasswordConsoleWriter {
 

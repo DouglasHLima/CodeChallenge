@@ -6,7 +6,9 @@ import com.doughlima.anagramschecker.utils.AnagramsConsoleWriter;
 import java.util.Scanner;
 
 /**
- *
+ * provides application control logic by reading user input and displaying console values
+ * @author Douglas Lima
+ * @see AnagramsSubstringChecker
  */
 public class AnagramsChekerController {
     public void run(){
@@ -16,7 +18,7 @@ public class AnagramsChekerController {
         AnagramsConsoleWriter.WriteInsertionMessage();
         String input = reader.next();
 
-        int numberOfCombinations = checker.numberOfCombinations(input);
+        int numberOfCombinations = checker.numberOfPossibleAnagrams(input);
 
         AnagramsConsoleWriter.WriteResults(numberOfCombinations);
     }

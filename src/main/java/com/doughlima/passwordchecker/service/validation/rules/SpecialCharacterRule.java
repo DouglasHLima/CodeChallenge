@@ -6,8 +6,9 @@ import com.doughlima.passwordchecker.service.validation.ValidationRule;
 import java.util.List;
 import java.util.stream.IntStream;
 
-/**@author Douglas Lima
+/**
  * Rule to check the if input has any special character
+ * @author Douglas Lima.
  */
 public class SpecialCharacterRule implements ValidationRule<char[]> {
 

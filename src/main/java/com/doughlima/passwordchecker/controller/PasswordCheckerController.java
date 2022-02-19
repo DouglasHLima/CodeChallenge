@@ -5,12 +5,13 @@ import com.doughlima.passwordchecker.utils.PasswordConsoleWriter;
 
 import java.util.Scanner;
 
-/**@author Douglas Lima
+/**
  * Provides application control logic by reading user input
  * and displaying console results of ValidationDriver.
  * The message will be RED for a wrong password
  * or will be Green foa a correct password.
  * @see ValidationDriver
+ * @author Douglas Lima
  */
 public class PasswordCheckerController {
     public void run(){

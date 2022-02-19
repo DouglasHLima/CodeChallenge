@@ -1,10 +1,11 @@
 package com.doughlima.passwordchecker.service.validation;
 
-/**@author Douglas Lima
+/**
  * defines a contract to be implemented in all validation rules
  * that will be instantiated via polymorphism
  * @param <E> Generic - defines the parameter in the validation implementation
- *          that will be performed
+ * that will be performed
+ * @author Douglas Lima
  */
 public interface ValidationRule<E> {
     /**

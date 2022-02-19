@@ -4,9 +4,10 @@ import com.doughlima.passwordchecker.service.validation.rules.*;
 
 import java.util.List;
 
-/**@author Douglas Lima.
+/**
  * this class stores the validation instances that will be performed in a list
  * and provides a method to execute all of them
+ * @author Douglas Lima.
  */
 public class ValidationDriver {
 

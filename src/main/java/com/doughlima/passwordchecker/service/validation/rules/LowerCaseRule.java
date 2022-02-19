@@ -5,8 +5,9 @@ import com.doughlima.passwordchecker.service.validation.ValidationRule;
 
 import java.util.stream.IntStream;
 
-/**@author Douglas Lima.
+/**
  * Rule to check if exists any lowerCase letter
+ * @author Douglas Lima.
  */
 public class LowerCaseRule implements ValidationRule<char[]> {
 
