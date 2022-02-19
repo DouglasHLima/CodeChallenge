@@ -4,6 +4,10 @@ Para executar o código, faça um git clone deste repositório,
 abra-o em sua IDE favorita. O projeto possui um pacote para cada desafio.
 Cada pacote possui sua própria classe com o método main para serem executados de forma independente.
 
+### Tecnologias utilizadas:
+- Java 11
+- Maven
+- Junit 5.8
 
 ## Descrição e listagem dos desafios:
 
